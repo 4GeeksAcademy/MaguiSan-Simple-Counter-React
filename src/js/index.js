@@ -14,7 +14,6 @@ let root = ReactDOM.createRoot(document.getElementById('app'));
 let counter=0;
 setInterval(function () {
     counter++;
-    console.log(counter);
     //render your react application
-    root.render(<SecondsCounter digit1={counter}/>);
+    root.render(<SecondsCounter digit={counter}/>);
 }, 1000);
